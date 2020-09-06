@@ -1,10 +1,6 @@
 Text Type:	str
 Numeric Types:	int, float, complex
 Sequence Types:	list, tuple, range
-List is mutable 
-Tuple is immutable
-
-
 Mapping Type:	dict
 Set Types:	set, frozenset
 Boolean Type:	bool

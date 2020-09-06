@@ -1,0 +1,17 @@
+import boto3
+ec2 = boto3.client('ec2',
+                        aws_access_key_id='AKIARANTI7G6XAUZPBWY', 
+                        aws_secret_access_key='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',
+                        # region_name='us-east-1'
+                        )
+aws_regions = ec2.describe_regions()
+
+print(type(aws_regions)) #<class 'dict'>
+print(aws_regions.keys()) #dict_keys
+
+
+aws_regions = ec2.describe_regions().get('Regions', "Key not found")
+
+for region as aws_regions:
+print(aws_regions)
+
