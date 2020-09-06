@@ -4,8 +4,8 @@ Example of list and tuples
 import boto3
 my_all_regions = []
 ec2 = boto3.client('ec2',
-                        aws_access_key_id='AKIARANTI7G6XAUZPBWY', 
-                        aws_secret_access_key='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',
+                        aws_access_key_id='ACCESS', 
+                        aws_secret_access_key='SECRET',
                         # region_name='us-east-1'
                         )
 aws_regions = ec2.describe_regions()
